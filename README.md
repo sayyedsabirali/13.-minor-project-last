@@ -4,7 +4,7 @@
 
 This repository hosts the code and documentation for a **Symptoms Based Disease Prediction and Recommendation System**. The core goal of this project is to bridge the gap between human language and clinical diagnosis by allowing users to describe their health issues naturally, similar to how they would talk to a doctor.
 
-The system utilizes advanced Natural Language Processing (NLP) techniques and state-of-the-art Large Language Models (LLMs) to understand conversational symptom descriptions and provide accurate disease predictions along with personalized health recommendations.
+The system utilizes advanced Natural Language Processing (NLP) techniques to understand conversational symptom descriptions and provide accurate disease predictions along with personalized health recommendations.
 
 ---
 
@@ -34,7 +34,7 @@ The system is built on a multi-stage pipeline, leveraging both traditional Machi
 
 ### 1. Natural Language Processing (NLP)
 
-* **Medical Concept Normalization (MCM):** Creation of a **Symptom Dictionary** to map diverse, everyday symptom expressions (e.g., "stomach ache," "tummy hurts") to standardized medical terms, ensuring input consistency.
+* **Medical Concept Normalization (MCN):** Creation of a **Symptom Dictionary** to map diverse, everyday symptom expressions (e.g., "stomach ache," "tummy hurts") to standardized medical terms, ensuring input consistency.
 
 * **Symptom Extraction and Matching:** Utilizing NLP techniques to isolate and normalize symptoms from the user's raw query.
 
@@ -45,8 +45,6 @@ The project explores and utilizes several models for high-accuracy prediction:
 * **ML Models:** SVC (Support Vector Classifier) and Random Forest, achieving high accuracy in initial benchmarks.
 
 * **Deep Learning:** MCN-BERT and BiLSTM models.
-
-* **Advanced Fine-Tuning:** Leveraging the strengths of pre-trained LLMs such as **LLaMA 3** and **Mistral-7B**, fine-tuned on medical datasets for superior symptom interpretation and prediction accuracy.
 
 ### 3. Recommendation System
 
